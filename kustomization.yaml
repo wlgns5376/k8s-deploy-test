@@ -1,2 +1,8 @@
 resources:
 - deployment.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: app
+  newName: wlgns5376/docker-image
+  newTag: dfebbed6
